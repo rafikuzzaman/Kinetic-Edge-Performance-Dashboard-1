@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique ID of the user" },
+        "name": { "type": "string", "description": "The full name of the user" },
+        "email": { "type": "string", "format": "email", "description": "The email address of the user" },
+        "photoURL": { "type": "string", "description": "The URL of the user's profile photo" },
+        "role": { "type": "string", "enum": ["admin", "athlete"], "description": "The role of the user" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the profile was created" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "TrainingSession": {
+      "title": "Training Session",
+      "description": "A training session containing multiple runs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string", "format": "date-time" },
+        "location": { "type": "string" },
+        "type": { "type": "string" },
+        "runsCount": { "type": "number" },
+        "avgSpeed": { "type": "number" },
+        "bestTime": { "type": "string" },
+        "userId": { "type": "string" }
+      },
+      "required": ["id", "date", "location", "userId"]
+    },
+    "EquipmentItem": {
+      "title": "Equipment Item",
+      "description": "A piece of ski equipment",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "status": { "type": "string" },
+        "usage": { "type": "string" },
+        "lastService": { "type": "string" },
+        "image": { "type": "string" },
+        "userId": { "type": "string" }
+      },
+      "required": ["id", "name", "userId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile data"
+    },
+    "/sessions/{sessionId}": {
+      "schema": "TrainingSession",
+      "description": "Training sessions"
+    },
+    "/equipment/{equipmentId}": {
+      "schema": "EquipmentItem",
+      "description": "Equipment inventory"
+    }
+  }
+}

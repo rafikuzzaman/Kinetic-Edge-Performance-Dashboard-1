@@ -1,0 +1,5 @@
+{
+  "name": "Kinetic Edge Performance Dashboard",
+  "description": "A high-performance alpine skiing analytics dashboard for Jess, featuring velocity curves, training logs, and real-time metrics.",
+  "requestFramePermissions": []
+}
