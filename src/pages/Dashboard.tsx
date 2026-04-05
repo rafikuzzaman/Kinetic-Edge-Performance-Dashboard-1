@@ -138,7 +138,7 @@ export const Dashboard = () => {
       <img 
         alt="Snowy mountain terrain" 
         className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-30 -z-10" 
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuASg7GTODF3Anwze66oF1-lOnsvaLR8b6RM338c9MtDOdecINqOCWlfcSmRKBne0VwvYaX3g6vN2b3Doc_W6TFSpMPYfZ1b0NjaEGqOdp7pmA_I3sUZiUUEPYRVqDQVmjkCI7VAEyqwk0yTXvQx7kbRt546VMc43vEialdZZaIiWTaf_N8fONdRybe98beV2SmGmjnjcywWbx5_G804ByV8eDCl16G-Xlp62T_ude48RARhrJwWFmBjxFDB6uh7zezU0INLPbp1ngo0"
+        src="https://picsum.photos/seed/mountain/800/600"
         referrerPolicy="no-referrer"
       />
       <div>

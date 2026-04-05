@@ -12,7 +12,7 @@ const SESSIONS = [
     time: '08:30 - 11:30',
     runs: 8,
     status: 'Completed',
-    image: 'https://images.unsplash.com/photo-1482867996988-29ec3aee816d?auto=format&fit=crop&q=80&w=400&h=200'
+    image: 'https://picsum.photos/seed/ski1/800/400'
   },
   {
     id: 'SES-101',
@@ -22,7 +22,7 @@ const SESSIONS = [
     time: '09:00 - 12:00',
     runs: 12,
     status: 'Completed',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=400&h=200'
+    image: 'https://picsum.photos/seed/ski2/800/400'
   }
 ];
 

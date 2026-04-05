@@ -6,6 +6,27 @@
     <title>Kinetic Edge | Performance Dashboard</title>
     <meta name="description" content="High-performance alpine skiing analytics dashboard. Track velocity, training sessions, and equipment metrics." />
     
+    <script>
+      // Fix for "Cannot set property fetch of #<Window> which has only a getter"
+      // This error occurs when a library tries to overwrite window.fetch in a restricted environment.
+      (function() {
+        try {
+          const descriptor = Object.getOwnPropertyDescriptor(window, 'fetch');
+          if (descriptor && !descriptor.writable && !descriptor.set && descriptor.configurable) {
+            const originalFetch = window.fetch;
+            Object.defineProperty(window, 'fetch', {
+              value: originalFetch,
+              writable: true,
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {
+          // Ignore errors during redefinition
+        }
+      })();
+    </script>
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kinetic-edge-performance-dashboard.vercel.app/" />

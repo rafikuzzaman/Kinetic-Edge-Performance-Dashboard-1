@@ -11,7 +11,7 @@ const EQUIPMENT = [
     status: 'Active',
     usage: '42 runs',
     lastService: '2 days ago',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=200&h=200'
+    image: 'https://picsum.photos/seed/skis/400/400'
   },
   {
     id: 'EQ-002',
@@ -20,7 +20,7 @@ const EQUIPMENT = [
     status: 'Active',
     usage: '128 runs',
     lastService: '1 week ago',
-    image: 'https://images.unsplash.com/photo-1516733968668-dbdce39c46ef?auto=format&fit=crop&q=80&w=200&h=200'
+    image: 'https://picsum.photos/seed/boots/400/400'
   },
   {
     id: 'EQ-003',
@@ -29,7 +29,7 @@ const EQUIPMENT = [
     status: 'Standby',
     usage: '12 runs',
     lastService: 'N/A',
-    image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&w=200&h=200'
+    image: 'https://picsum.photos/seed/helmet/400/400'
   }
 ];
 
