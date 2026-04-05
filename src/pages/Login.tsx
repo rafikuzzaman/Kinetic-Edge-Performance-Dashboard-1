@@ -81,10 +81,10 @@ export const Login = () => {
             <LogIn className="text-white" size={32} />
           </div>
           <h1 className="text-4xl font-headline font-bold text-on-surface tracking-tight">
-            {isLogin ? 'Welcome Back' : 'Join Alpine Velocity'}
+            {isLogin ? 'Welcome Back' : 'Join Kinetic Edge'}
           </h1>
           <p className="text-outline font-label mt-2">
-            {isLogin ? 'Access your performance metrics' : 'Start tracking your Giant Slalom progress'}
+            {isLogin ? 'Access your performance metrics' : 'Start tracking your performance progress'}
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export const Login = () => {
                   type="text" 
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Jess Miller"
+                  placeholder="Your Name"
                   className="w-full bg-surface-container-low border border-outline/20 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:border-primary transition-colors font-label"
                   required
                 />
@@ -121,7 +121,7 @@ export const Login = () => {
                 type="email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="athlete@alpinevelocity.com"
+                placeholder="athlete@kineticedge.com"
                 className="w-full bg-surface-container-low border border-outline/20 rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:border-primary transition-colors font-label"
                 required
               />
